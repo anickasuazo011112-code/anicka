@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Month 2026 | Eat Right, Stay Bright!</title>
+    <style>
+        :root {
+            --green: #2E8B57;
+            --light-green: #90EE90;
+            --orange: #FF8C00;
+            --red: #FF4500;
+            --yellow: #FFD700;
+            --blue: #4682B4;
+            --white: #FFFFFF;
+            --text-dark: #333333;
+            --shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #F0FFF0, #FFFFF0);
+            color: var(--text-dark);
+            line-height: 1.7;
+        }
+
+        /* Header & Banner */
+        header {
+            background: linear-gradient(rgba(46,139,87,0.8), rgba(255,140,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1542838132-92c53300491e?w=1200') center/cover no-repeat;
+            color: var(--white);
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInDown 1s ease;
+        }
+
+        header p {
+            font-size: 1.4rem;
+            max-width: 800px;
+            margin: 0 auto;
+            animation: fadeInUp 1s ease 0.3s both;
+        }
+
+        /* Floating Fruit Decorations */
+        .floating-item {
+            position: absolute;
+            font-size: 2.5rem;
+            opacity: 0.25;
+            animation: float 8s infinite ease-in-out;
+        }
+        .f1 { top: 15%; left: 5%; animation-delay: 0s; }
+        .f2 { top: 25%; right: 8%; animation-delay: 1.5s; }
+        .f3 { bottom: 10%; left: 12%; animation-delay: 3s; }
+        .f4 { bottom: 20%; right: 5%; animation-delay: 4.5s; }
+
+        /* Navigation */
+        nav {
+            background: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            padding: 12px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        nav a {
+            color: var(--green);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background: var(--light-green);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        /* Sections */
+        section {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 25px;
+        }
+        .section-title {
+            text-align: center;
+            color: var(--green);
+            font-size: 2.2rem;
+            margin-bottom: 35px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid var(--orange);
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .title-wrap { text-align: center; }
+
+        /* Fruit & Veggie Gallery */
+        .food-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+        .food-card {
+            background: var(--white);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            cursor: pointer;
+        }
+        .food-card:hover {
+            transform: translateY(-10px) rotate(1deg);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+        }
+        .food-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .food-card:hover img { transform: scale(1.1); }
+        .food-card h3 {
+            color: var(--red);
+            padding: 15px 15px 5px;
+            font-size: 1.3rem;
+        }
+        .food-card p { padding: 0 15px 15px; font-size: 0.95rem; color: #555; }
+
+        /* Nutrition Facts */
+        .facts-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+        }
+        .fact-box {
+            flex: 1 1 300px;
+            background: var(--white);
+            border-left: 6px solid var(--orange);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            transition: 0.3s;
+        }
+        .fact-box:hover { border-left-color: var(--green); padding-left: 30px; }
+        .fact-box h3 { color: var(--green); margin-bottom: 12px; }
+
+        /* Tips Section */
+        .tips-list {
+            background: rgba(255,255,255,0.7);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+        }
+        .tips-list li {
+            margin: 15px 0;
+            font-size: 1.1rem;
+            list-style: none;
+            padding-left: 35px;
+            position: relative;
+            transition: 0.2s;
+        }
+        .tips-list li:hover { padding-left: 45px; color: var(--green); }
+        .tips-list li::before {
+            content: "🥗";
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Banner Image */
+        .big-banner {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            margin: 30px 0;
+            transition: transform 0.5s ease;
+        }
+        .big-banner:hover { transform: scale(1.02); }
+
+        /* Footer */
+        footer {
+            background: var(--green);
+            color: var(--white);
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 60px;
+        }
+        footer p { margin: 8px 0; }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes float {
+            0%,100% { transform: translateY(0) rotate(-5deg); }
+            50% { transform: translateY(-25px) rotate(5deg); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            header p { font-size: 1.1rem; }
+            .section-title { font-size: 1.7rem; }
+            nav ul { gap: 8px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="floating-item f1">🍎</div>
+    <div class="floating-item f2">🥦</div>
+    <div class="floating-item f3">🍌</div>
+    <div class="floating-item f4">🥕</div>
+
+    <h1>🥗 NUTRITION MONTH 2026 🥗</h1>
+    <p>"Healthy Diet, Healthy Life: Eat More Fruits & Vegetables Every Day!"</p>
+</header>
+
+<!-- Navigation -->
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#foods">Fruits & Veggies</a></li>
+        <li><a href="#facts">Nutrition Facts</a></li>
+        <li><a href="#tips">Healthy Tips</a></li>
+    </ul>
+</nav>
+
+<!-- About Section -->
+<section id="about">
+    <div class="title-wrap"><h2 class="section-title">Why Nutrition Matters?</h2></div>
+    <p style="text-align:center; font-size:1.1rem; max-width:900px; margin:0 auto;">
+        Good nutrition keeps our body strong, mind sharp, and protects us from sickness. 
+        Eating colorful fruits and vegetables gives us vitamins, minerals, and fiber we need to grow and stay healthy!
+    </p>
+    <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17062?w=1200" alt="Healthy Food Spread" class="big-banner">
+</section>
+
+<!-- Fruits & Vegetables Gallery -->
+<section id="foods">
+    <div class="title-wrap"><h2 class="section-title">🍎 Fresh Fruits & Vegetables 🥦</h2></div>
+    <div class="food-grid">
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1568702846914-96b305d05f21?w=600" alt="Apple">
+            <h3>Apple</h3>
+            <p>Rich in fiber and Vitamin C. Helps heart health and digestion.</p>
+        </div>
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=600" alt="Banana">
+            <h3>Banana</h3>
+            <p>Great source of potassium and energy. Perfect for active people!</p>
+        </div>
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=600" alt="Orange">
+            <h3>Orange</h3>
+            <p>Packed with Vitamin C to boost your immune system.</p>
+        </div>
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=600" alt="Broccoli">
+            <h3>Broccoli</h3>
+            <p>Loaded with Vitamin K, iron, and calcium for strong bones.</p>
+        </div>
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=600" alt="Carrot">
+            <h3>Carrot</h3>
+            <p>Beta-carotene keeps your eyesight clear and healthy.</p>
+        </div>
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600" alt="Strawberry">
+            <h3>Strawberry</h3>
+            <p>Antioxidant-rich and low in sugar. Great for skin health!</p>
+        </div>
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1587735243615-c039b216b1d5?w=600" alt="Spinach">
+            <h3>Spinach</h3>
+            <p>Full of iron and folate. Good for blood and energy.</p>
+        </div>
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1519996529931-283f406e123b?w=600" alt="Watermelon">
+            <h3>Watermelon</h3>
+            <p>High water content keeps you hydrated and cool!</p>
+        </div>
+    </div>
+</section>
+
+<!-- Nutrition Facts -->
+<section id="facts">
+    <div class="title-wrap"><h2 class="section-title">📊 Important Nutrition Facts</h2></div>
+    <div class="facts-container">
+        <div class="fact-box">
+            <h3>✅ Eat 5 Servings Daily</h3>
+            <p>Health experts recommend at least 3 servings of vegetables and 2 servings of fruits every day.</p>
+        </div>
+        <div class="fact-box">
+            <h3>✅ Natural is Best</h3>
+            <p>Fresh or lightly cooked foods keep more vitamins than processed or fried ones.</p>
+        </div>
+        <div class="fact-box">
+            <h3>✅ Colorful Plate</h3>
+            <p>Different colors mean different nutrients! Eat red, green, orange, and purple foods.</p>
+        </div>
+        <div class="fact-box">
+            <h3>✅ Less Sugar & Salt</h3>
+            <p>Too much sugar and salt can harm your body. Use fruits for natural sweetness instead!</p>
+        </div>
+    </div>
+</section>
+
+<!-- Healthy Tips -->
+<section id="tips">
+    <div class="title-wrap"><h2 class="section-title">💡 Easy Healthy Eating Tips</h2></div>
+    <ul class="tips-list">
+        <li>Start your day with fruit instead of sugary snacks.</li>
+        <li>Add vegetables to rice, noodles, soups, or sandwiches.</li>
+        <li>Drink water instead of soda or sweet drinks.</li>
+        <li>Try one new fruit or vegetable every week.</li>
+        <li>Eat slowly and chew well to help digestion.</li>
+        <li>Share healthy meals with your family and friends!</li>
+    </ul>
+</section>
+
+<!-- Footer -->
+<footer>
+    <h3>🌿 Eat Right, Shine Bright! 🌿</h3>
+    <p>Happy Nutrition Month 2026 | Made for School Project</p>
+    <p>Images from Unsplash • Free for Educational Use</p>
+</footer>
+
+</body>
+</html>
+
