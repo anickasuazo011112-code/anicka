@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 3 — CSS Background | Philippine Beauty</title>
+    <style>
+        body {
+            /* ✅ 1. Background Color — shows through semi-transparent areas */
+            background-color: #e0f2fe;
+
+            /* ✅ 2. Background Image — scenic Philippine coastline */
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6d/White_Beach_Boracay_Philippines.jpg");
+
+            /* ✅ 3. Background Repeat — show once only, no tiling */
+            background-repeat: no-repeat;
+
+            /* ✅ 4. Background Attachment — stays fixed when scrolling */
+            background-attachment: fixed;
+
+            /* extra polish */
+            background-position: center top;
+            background-size: cover;
+
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+            margin: 0;
+            padding: 70px 25px;
+            color: #1f2937;
+        }
+
+        .content-card {
+            background-color: rgba(255, 255, 255, 0.88);
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 35px 40px;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.18);
+        }
+
+        h1 {
+            text-align: center;
+            color: #0369a1;
+            margin-top: 0;
+            border-bottom: 2px solid #bae6fd;
+            padding-bottom: 12px;
+        }
+
+        p {
+            font-size: 17px;
+            text-align: justify;
+        }
+
+        .properties {
+            margin-top: 30px;
+            padding: 22px;
+            background-color: #f0f9ff;
+            border-radius: 12px;
+            border-left: 5px solid #0ea5e9;
+        }
+
+        .properties h3 {
+            color: #0369a1;
+            margin-top: 0;
+        }
+
+        .properties p {
+            margin: 8px 0;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-card">
+        <h1>🌊 The Philippine Coastline</h1>
+
+        <p>
+            Known worldwide for crystal waters and powdery white shores, our islands are among the most beautiful anywhere. From the nearby coves of Batangas and Cavite to the postcard-perfect beaches of Boracay, Palawan, and Siargao — this country is truly blessed.
+        </p>
+        <p>
+            This page demonstrates four key CSS background properties working together. Scroll up and down — notice how the image stays perfectly still, like a true seascape that never moves no matter how much the world shifts around it.
+        </p>
+
+        <div class="properties">
+            <h3>🔧 Applied Background Properties</h3>
+            <p><strong>1. Background Color:</strong> Light sky-blue (#e0f2fe) — visible around & behind the image</p>
+            <p><strong>2. Background Image:</strong> Scenic coastline photo — fills the view beautifully</p>
+            <p><strong>3. Background Repeat:</strong> no-repeat — single centered image, no tiling</p>
+            <p><strong>4. Background Attachment:</strong> fixed — image stays locked in place while you scroll the page</p>
+        </div>
+    </div>
+
+</body>
+</html>
+
