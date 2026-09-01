@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 2 — CSS Border | Cavite Heritage</title>
+    <style>
+        body {
+            /* ✅ 1. CSS Background Color */
+            background-color: #f0f4f8;
+            /* ✅ 2. Font Color */
+            color: #2b2b2b;
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.7;
+        }
+
+        h1 {
+            text-align: center;
+            color: #9c1212;
+            border-bottom: 2px solid #9c1212;
+            padding-bottom: 12px;
+        }
+
+        .intro {
+            text-align: center;
+            font-size: 18px;
+            max-width: 750px;
+            margin: 0 auto 35px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            /* ✅ 3. CSS Border Style & Properties */
+            border-style: ridge;
+            border-width: 10px;
+            border-color: #b71c1c #ff6f60 #ff6f60 #b71c1c;
+            border-radius: 18px;
+            width: 480px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.03);
+        }
+
+        .caption {
+            text-align: center;
+            margin-top: 18px;
+            font-style: italic;
+            color: #444;
+        }
+
+        .requirements {
+            background-color: #ffffff;
+            border-left: 5px solid #9c1212;
+            max-width: 750px;
+            margin: 40px auto 0;
+            padding: 20px 25px;
+            border-radius: 10px;
+        }
+
+        .requirements h3 {
+            color: #9c1212;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🏛️ Historic Aguinaldo Shrine — Kawit, Cavite</h1>
+
+    <p class="intro">
+        The place where Philippine independence was proclaimed on June 12, 1898 — right here in our province.
+    </p>
+
+    <div class="image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Aguinaldo_Shrine_%28Kawit%2C_Cavite%29.jpg" 
+             alt="Historic Aguinaldo Shrine in Kawit, Cavite">
+    </div>
+
+    <p class="caption">Aguinaldo Shrine — Kawit, Cavite: Birthplace of Philippine Independence</p>
+
+    <div class="requirements">
+        <h3>📋 Applied Properties</h3>
+        <ul>
+            <li><strong>Background Color:</strong> Soft light blue-gray (#f0f4f8)</li>
+            <li><strong>Font Color:</strong> Dark charcoal (#2b2b2b)</li>
+            <li><strong>Border Style:</strong> RIDGE — 3D ridged effect</li>
+            <li><strong>Border Width:</strong> 10px — bold and clear</li>
+            <li><strong>Border Color:</strong> Dual red tones for depth</li>
+            <li><strong>Rounded Corners:</strong> border-radius: 18px</li>
+        </ul>
+    </div>
+
+</body>
+</html>
+
