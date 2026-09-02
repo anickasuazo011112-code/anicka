@@ -1,95 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activity 3 — CSS Background | Philippine Beauty</title>
+    <title>🍕 Yummy Food Facts 🍔</title>
     <style>
         body {
-            /* ✅ 1. Background Color — shows through semi-transparent areas */
-            background-color: #e0f2fe;
-
-            /* ✅ 2. Background Image — scenic Philippine coastline */
-            background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6d/White_Beach_Boracay_Philippines.jpg");
-
-            /* ✅ 3. Background Repeat — show once only, no tiling */
-            background-repeat: no-repeat;
-
-            /* ✅ 4. Background Attachment — stays fixed when scrolling */
+            background-color: #fff8e1;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Ctext y='35' font-size='28' opacity='0.10'%3E🍴%3C/text%3E%3C/svg%3E");
+            background-repeat: repeat;
             background-attachment: fixed;
-
-            /* extra polish */
-            background-position: center top;
-            background-size: cover;
-
-            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
-            margin: 0;
-            padding: 70px 25px;
-            color: #1f2937;
-        }
-
-        .content-card {
-            background-color: rgba(255, 255, 255, 0.88);
-            max-width: 680px;
-            margin: 0 auto;
-            padding: 35px 40px;
-            border-radius: 16px;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.18);
-        }
-
-        h1 {
+            font-family: sans-serif;
             text-align: center;
-            color: #0369a1;
-            margin-top: 0;
-            border-bottom: 2px solid #bae6fd;
-            padding-bottom: 12px;
+            padding: 50px 25px;
+            color: #4b3621;
         }
-
-        p {
-            font-size: 17px;
-            text-align: justify;
+        h1 { font-size: 44px; margin-bottom: 40px; }
+        .item {
+            background: rgba(255,255,255,0.85);
+            padding: 20px;
+            margin: 18px auto;
+            max-width: 450px;
+            border-radius: 16px;
         }
-
-        .properties {
-            margin-top: 30px;
-            padding: 22px;
-            background-color: #f0f9ff;
-            border-radius: 12px;
-            border-left: 5px solid #0ea5e9;
-        }
-
-        .properties h3 {
-            color: #0369a1;
-            margin-top: 0;
-        }
-
-        .properties p {
-            margin: 8px 0;
-            text-align: left;
-        }
+        .emoji { font-size: 50px; margin-bottom: 8px; }
     </style>
 </head>
 <body>
 
-    <div class="content-card">
-        <h1>🌊 The Philippine Coastline</h1>
+    <h1>🍔 Fun Food Facts 🍕</h1>
 
-        <p>
-            Known worldwide for crystal waters and powdery white shores, our islands are among the most beautiful anywhere. From the nearby coves of Batangas and Cavite to the postcard-perfect beaches of Boracay, Palawan, and Siargao — this country is truly blessed.
-        </p>
-        <p>
-            This page demonstrates four key CSS background properties working together. Scroll up and down — notice how the image stays perfectly still, like a true seascape that never moves no matter how much the world shifts around it.
-        </p>
+    <div class="item">
+        <div class="emoji">🍕</div>
+        <h3>Pizza</h3>
+        <p>🍅 Originated in Italy 🇮🇹 topped with cheese & tomato sauce 🫶 loved everywhere!</p>
+    </div>
 
-        <div class="properties">
-            <h3>🔧 Applied Background Properties</h3>
-            <p><strong>1. Background Color:</strong> Light sky-blue (#e0f2fe) — visible around & behind the image</p>
-            <p><strong>2. Background Image:</strong> Scenic coastline photo — fills the view beautifully</p>
-            <p><strong>3. Background Repeat:</strong> no-repeat — single centered image, no tiling</p>
-            <p><strong>4. Background Attachment:</strong> fixed — image stays locked in place while you scroll the page</p>
-        </div>
+    <div class="item">
+        <div class="emoji">🍔</div>
+        <h3>Burger</h3>
+        <p>🥬 Bun + patty + lettuce + tomato + cheese 🧡 juicy & tasty classic!</p>
+    </div>
+
+    <div class="item">
+        <div class="emoji">🌮</div>
+        <h3>Taco</h3>
+        <p>🫓 Mexican flavor 🇲🇽 crispy shell filled with meat & fresh veggies 🥑 spicy & fun!</p>
+    </div>
+
+    <div class="item">
+        <div class="emoji">🍜</div>
+        <h3>Noodles</h3>
+        <p>🥣 Warm & comforting 🍜 slurpy goodness enjoyed in many Asian countries 🥢</p>
+    </div>
+
+    <div class="item">
+        <div class="emoji">🍦</div>
+        <h3>Ice Cream</h3>
+        <p>❄️ Cold creamy sweetness 🍨 perfect treat on sunny days ☀️ makes everyone smile 😊</p>
     </div>
 
 </body>
 </html>
-
