@@ -3,49 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Selectors Activity</title>
+    <title>Beautiful Philippine Sunsets</title>
     <style>
-        /* 1. Universal Selector — applies to EVERYTHING */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
         }
 
-        /* 2. Element Selector — targets all <h1> and <p> elements */
+        body {
+            background: linear-gradient(180deg, #ff7e5f 0%, #feb47b 30%, #ffedbc 60%, #87ceeb 100%);
+            background-attachment: fixed;
+            min-height: 100vh;
+            padding: 30px;
+            color: #2c2c2c;
+            line-height: 1.7;
+        }
+
         h1 {
-            color: #2c3e50;
             text-align: center;
-            padding: 20px;
-            background-color: #ecf0f1;
+            font-size: 48px;
+            color: #ffffff;
+            text-shadow: 3px 3px 8px rgba(0,0,0,0.4);
+            margin: 20px 0;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            color: #8b0000;
+            font-size: 28px;
+            border-left: 5px solid #ff4500;
+            padding-left: 15px;
+            margin-bottom: 15px;
         }
 
         p {
-            color: #34495e;
-            font-size: 17px;
-            line-height: 1.6;
-            margin: 15px 20px;
+            font-size: 18px;
+            text-align: justify;
+            margin-bottom: 15px;
         }
 
-        /* 3. ID Selector — targets ONE specific element with id="highlight" */
-        #highlight {
-            background-color: #fef9c3;
-            border-left: 4px solid #f59e0b;
-            padding: 12px;
-            margin: 10px 20px;
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transition: transform 0.4s ease;
+        }
+
+        img:hover {
+            transform: scale(1.03);
+        }
+
+        section {
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 18px;
+            background-color: rgba(255, 255, 255, 0.88);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+        }
+
+        #main-header {
+            background: linear-gradient(90deg, #ff512f, #dd2476);
+            padding: 25px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 35px;
+            box-shadow: 0 10px 25px rgba(221, 36, 118, 0.35);
+        }
+
+        #main-header h1 {
+            margin: 0;
+            font-size: 52px;
+        }
+
+        #palawan {
+            border: 4px solid #00ced1;
+            background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+        }
+
+        #boracay {
+            border: 4px solid #ff6347;
+            background: linear-gradient(to bottom, #fff8e1, #ffffff);
+        }
+
+        #ilocos {
+            border: 4px solid #daa520;
+            background: linear-gradient(to bottom, #fff3e0, #ffffff);
+        }
+
+        #description-box {
+            background-color: rgba(255, 248, 220, 0.9);
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+            font-style: italic;
+            color: #444444;
+            font-size: 17px;
+        }
+
+        #footer-note {
+            text-align: center;
+            font-size: 16px;
+            color: #ffffff;
+            margin-top: 40px;
+            padding: 18px;
+            background-color: rgba(0,0,0,0.35);
+            border-radius: 12px;
         }
     </style>
 </head>
 <body>
 
-    <h1>Welcome to My CSS Selectors Page</h1>
+    <header id="main-header">
+        <h1>🌅 Beautiful Philippine Sunsets 🌊</h1>
+        <p style="color: #fff; font-size: 20px; font-weight: 500;">Experience the most breathtaking sunsets across the Philippines</p>
+    </header>
 
-    <p>This paragraph is styled using the <strong>Element Selector</strong> — all &lt;p&gt; tags share this look.</p>
+    <section id="palawan">
+        <h2>📍 El Nido, Palawan</h2>
+        <img src="palawan.jpg" alt="Sunset in El Nido Palawan">
+        <p>Palawan is known worldwide as one of the most beautiful islands on the planet, and its sunsets are legendary. As the golden hour approaches, the sky transforms into a massive canvas painted with brilliant hues of gold, fiery orange, soft rose pink, and deep violet. The limestone islets stand like ancient sentinels against the glowing horizon, while the crystal-clear waters mirror every shade above, creating a breathtaking mirror that seems to stretch into infinity. Many travelers claim that watching the sunset here feels less like seeing nature and more like witnessing a masterpiece being painted live before their eyes. As the sun dips slowly toward the water, the light changes minute by minute—turning everything from warm amber to deep crimson until the first evening stars begin to appear—leaving anyone watching in total awe.</p>
+        <p id="description-box">💡 Did you know? El Nido sunsets are best viewed from a boat out on the water, where the fading sunlight paints the entire ocean surface in liquid gold and rose, reflecting off the jagged limestone cliffs in ways that look almost too beautiful to be real.</p>
+    </section>
 
-    <p id="highlight">This paragraph is styled using the <strong>ID Selector</strong> — unique style only for this element.</p>
+    <section id="boracay">
+        <h2>📍 White Beach, Boracay</h2>
+        <img src="boracay.jpg" alt="Sunset in Boracay Island">
+        <p>Boracay's sunsets are perhaps the most famous in the country and for wonderful reasons. When late afternoon arrives, crowds gather along the powdery white shoreline, boats with colorful sails drift slowly across the glowing path of the sun, and the entire atmosphere softens into something magical. The sky blazes in vivid gradients—starting with soft peach and apricot, deepening into vibrant coral and tangerine, then melting into velvety lavender and indigo. Sailboats silhouettes drift lazily in front of the glowing sun, creating postcard-perfect scenes that draw photographers and lovers alike. The warm breeze carries the scent of salt and frangipani, laughter drifts across the water, and as daylight softens into twilight, a deep sense of peace settles over the island like a gentle blanket, turning ordinary moments into lifelong cherished memories.</p>
+        <p id="description-box">💡 A Boracay sunset is best enjoyed barefoot on the sand, drink in hand, while watching paraw sailboats glide gracefully across the glowing path of the setting sun.</p>
+    </section>
 
-    <p>Notice consistent spacing and font everywhere? That's the <strong>Universal Selector (*)</strong> at work!</p>
+    <section id="ilocos">
+        <h2>📍 Cape Bojeador, Ilocos Norte</h2>
+        <img src="ilocos.jpg" alt="Sunset at Cape Bojeador Ilocos Norte">
+        <p>Standing atop the rugged coastline of Ilocos Norte, Cape Bojeador offers a sunset experience that feels timeless. The historic lighthouse—built long ago by Spanish colonizers—stands tall against the blazing evening sky, its stone walls warmed and gilded by the last rays of daylight. From this high vantage point, the vast West Philippine Sea stretches endlessly toward the horizon. The water turns from deep turquoise to rich amber, then burnished copper, then shadowy blue-purple as daylight surrenders. The wind blows stronger here, carrying the salty ocean spray and whispering across the grassy cliffs. Watching from up high gives a sense of standing between two worlds—the ancient stone watching over generations, while the sun sets in the same fiery glory it has done for centuries. It feels solemn, majestic, and deeply Filipino—a reminder that beauty and history often shine together beneath the same glowing sky.</p>
+        <p id="description-box">💡 This sunset carries history with it—the Cape Bojeador Lighthouse has guided ships since 1892, and every evening the setting sun blesses its stone with warm light before vanishing into the deep blue horizon.</p>
+    </section>
+
+    <footer id="footer-note">
+        ✦ Philippine Sunsets — Nature's Masterpiece, Painted Every Single Day ✦<br>
+        CSS Selectors Demonstrated: Universal Selector * | Element Selector (body, h1, h2, p, section, img) | ID Selector (#main-header, #palawan, #boracay, #ilocos, #description-box, #footer-note)
+    </footer>
 
 </body>
 </html>
