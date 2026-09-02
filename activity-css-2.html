@@ -3,102 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activity 2 — CSS Border | Cavite Heritage</title>
+    <title>✨ Magical Emoji World — CSS Border Activity ✨</title>
     <style>
-        body {
-            /* ✅ 1. CSS Background Color */
-            background-color: #f0f4f8;
-            /* ✅ 2. Font Color */
-            color: #2b2b2b;
-            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+        * {
             margin: 0;
-            padding: 40px 20px;
-            line-height: 1.7;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* ✅ Requirement 1: Background Color */
+            background-color: #fff0f8;
+            /* ✅ Requirement 2: Font Color */
+            color: #3a004d;
+            font-family: 'Segoe UI', Georgia, sans-serif;
+            padding: 40px 25px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 25px;
+            background: linear-gradient(135deg, #ffe4f2, #f4e4ff);
+            border-radius: 20px;
         }
 
         h1 {
-            text-align: center;
-            color: #9c1212;
-            border-bottom: 2px solid #9c1212;
-            padding-bottom: 12px;
+            font-size: 42px;
+            color: #6b0080;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
         }
 
-        .intro {
-            text-align: center;
-            font-size: 18px;
-            max-width: 750px;
-            margin: 0 auto 35px;
+        .subtitle {
+            font-size: 20px;
+            color: #804090;
         }
 
-        .image-container {
-            display: flex;
-            justify-content: center;
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 35px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
-        img {
-            /* ✅ 3. CSS Border Style & Properties */
-            border-style: ridge;
-            border-width: 10px;
-            border-color: #b71c1c #ff6f60 #ff6f60 #b71c1c;
+        .emoji-card {
+            background-color: #ffffff;
+            padding: 25px;
             border-radius: 18px;
-            width: 480px;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+            text-align: center;
+            box-shadow: 0 6px 18px rgba(107, 0, 128, 0.12);
             transition: transform 0.3s ease;
         }
 
-        img:hover {
-            transform: scale(1.03);
+        .emoji-card:hover {
+            transform: translateY(-8px);
         }
 
-        .caption {
+        .emoji-display {
+            font-size: 90px;
+            padding: 25px 15px;
+            margin: 15px auto;
+            width: 180px;
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fdf4ff;
+            border-radius: 14px;
+        }
+
+        .style-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #500070;
+            margin: 10px 0 5px;
+        }
+
+        .style-desc {
+            font-size: 15px;
+            color: #706080;
+            line-height: 1.5;
+        }
+
+        /* ✅ Requirement 3: DIFFERENT BORDER STYLES applied */
+        .dotted-border {
+            border-width: 6px;
+            border-style: dotted;
+            border-color: #ff3399;
+        }
+
+        .dashed-border {
+            border-width: 6px;
+            border-style: dashed;
+            border-color: #3399ff;
+        }
+
+        .solid-border {
+            border-width: 6px;
+            border-style: solid;
+            border-color: #33cc66;
+        }
+
+        .double-border {
+            border-width: 8px;
+            border-style: double;
+            border-color: #ffcc00;
+        }
+
+        .groove-border {
+            border-width: 6px;
+            border-style: groove;
+            border-color: #6666ff;
+        }
+
+        .ridge-border {
+            border-width: 6px;
+            border-style: ridge;
+            border-color: #ff6600;
+        }
+
+        .inset-border {
+            border-width: 6px;
+            border-style: inset;
+            border-color: #cc33ff;
+        }
+
+        .outset-border {
+            border-width: 6px;
+            border-style: outset;
+            border-color: #00cccc;
+        }
+
+        footer {
             text-align: center;
-            margin-top: 18px;
-            font-style: italic;
-            color: #444;
-        }
-
-        .requirements {
-            background-color: #ffffff;
-            border-left: 5px solid #9c1212;
-            max-width: 750px;
-            margin: 40px auto 0;
-            padding: 20px 25px;
-            border-radius: 10px;
-        }
-
-        .requirements h3 {
-            color: #9c1212;
-            margin-top: 0;
+            margin-top: 50px;
+            padding: 20px;
+            font-size: 17px;
+            color: #705080;
         }
     </style>
 </head>
 <body>
 
-    <h1>🏛️ Historic Aguinaldo Shrine — Kawit, Cavite</h1>
+    <header>
+        <h1>🌈 ✨ Magical Emoji World ✨ 🌈</h1>
+        <p class="subtitle">✦ Discover All 8 CSS Border Styles ✦</p>
+    </header>
 
-    <p class="intro">
-        The place where Philippine independence was proclaimed on June 12, 1898 — right here in our province.
-    </p>
+    <div class="container">
 
-    <div class="image-container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Aguinaldo_Shrine_%28Kawit%2C_Cavite%29.jpg" 
-             alt="Historic Aguinaldo Shrine in Kawit, Cavite">
+        <div class="emoji-card">
+            <h3 class="style-name">✦ Dotted Border</h3>
+            <div class="emoji-display dotted-border">🦋🌸</div>
+            <p class="style-desc">Round dots forming a playful, bouncy border</p>
+        </div>
+
+        <div class="emoji-card">
+            <h3 class="style-name">✦ Dashed Border</h3>
+            <div class="emoji-display dashed-border">🌊⛈️</div>
+            <p class="style-desc">Short lines with gaps — like rain or waves</p>
+        </div>
+
+        <div class="emoji-card">
+            <h3 class="style-name">✦ Solid Border</h3>
+            <div class="emoji-display solid-border">🌲🍀</div>
+            <p class="style-desc">One continuous unbroken bold clean line</p>
+        </div>
+
+        <div class="emoji-card">
+            <h3 class="style-name">✦ Double Border</h3>
+            <div class="emoji-display double-border">⭐🌟</div>
+            <p class="style-desc">Two parallel lines — elegant and fancy frame</p>
+        </div>
+
+        <div class="emoji-card">
+            <h3 class="style-name">✦ Groove Border</h3>
+            <div class="emoji-display groove-border">💎🔷</div>
+            <p class="style-desc">3D carved look — appears pressed inward</p>
+        </div>
+
+        <div class="emoji-card">
+            <h3 class="style-name">✦ Ridge Border</h3>
+            <div class="emoji-display ridge-border">🔥🔶</div>
+            <p class="style-desc">3D raised look — appears popping outward</p>
+        </div>
+
+        <div class="emoji-card">
+            <h3 class="style-name">✦ Inset Border</h3>
+            <div class="emoji-display inset-border">🌙💜</div>
+            <p class="style-desc">Deep sunken effect — darker inner shadow</p>
+        </div>
+
+        <div class="emoji-card">
+            <h3 class="style-name">✦ Outset Border</h3>
+            <div class="emoji-display outset-border">☀️💛</div>
+            <p class="style-desc">Lifted button effect — bright outer glow</p>
+        </div>
+
     </div>
 
-    <p class="caption">Aguinaldo Shrine — Kawit, Cavite: Birthplace of Philippine Independence</p>
-
-    <div class="requirements">
-        <h3>📋 Applied Properties</h3>
-        <ul>
-            <li><strong>Background Color:</strong> Soft light blue-gray (#f0f4f8)</li>
-            <li><strong>Font Color:</strong> Dark charcoal (#2b2b2b)</li>
-            <li><strong>Border Style:</strong> RIDGE — 3D ridged effect</li>
-            <li><strong>Border Width:</strong> 10px — bold and clear</li>
-            <li><strong>Border Color:</strong> Dual red tones for depth</li>
-            <li><strong>Rounded Corners:</strong> border-radius: 18px</li>
-        </ul>
-    </div>
+    <footer>
+        💜 CSS Border Activity — All styles demonstrated clearly 💜<br>
+        background-color ✦ font-color ✦ border-style ✦ border-color ✦ border-width
+    </footer>
 
 </body>
 </html>
-
