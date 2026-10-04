@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Hobby | CSS Box Model</title>
+    <style>
+        /* === GLOBAL RESET === */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f0e8;
+            background-image: linear-gradient(to right, #f8f0e8, #f0e2d4);
+            padding: 30px;
+            line-height: 1.6;
+        }
+
+        /* =====================================================
+                           HEADER SECTION
+           ===================================================== */
+        .header {
+            /* ---------------- CONTENT ---------------- */
+            background-color: #6F4E37;
+            background-image: linear-gradient(145deg, #6F4E37, #8B5A2B);
+            color: #ffffff;
+            text-align: center;
+            font-size: 24px;
+            letter-spacing: 1px;
+
+            /* ---------------- PADDING ---------------- */
+            padding-top: 40px;
+            padding-right: 60px;
+            padding-bottom: 40px;
+            padding-left: 60px;
+            /* Shorthand: padding: 40px 60px; */
+
+            /* ---------------- BORDER ---------------- */
+            border-width: 6px;
+            border-style: solid;
+            border-color: #4A3520;
+            border-radius: 15px;
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 0;
+
+            /* ---------------- MARGIN ---------------- */
+            margin-top: 0;
+            margin-right: auto;
+            margin-bottom: 35px;
+            margin-left: auto;
+            /* Shorthand: margin: 0 auto 35px auto; */
+
+            width: 92%;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .header h1 {
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            font-style: italic;
+            opacity: 0.9;
+            font-size: 17px;
+        }
+
+        /* =====================================================
+                         MAIN CONTENT SECTION
+           ===================================================== */
+        .content {
+            /* ---------------- CONTENT ---------------- */
+            background-color: #ffffff;
+            color: #333333;
+            font-size: 17px;
+            text-align: justify;
+
+            /* ---------------- PADDING ---------------- */
+            padding-top: 30px;
+            padding-right: 35px;
+            padding-bottom: 30px;
+            padding-left: 35px;
+            /* Shorthand: padding: 30px 35px; */
+
+            /* ---------------- BORDER ---------------- */
+            border-width: 4px;
+            border-style: dashed;
+            border-color: #8B5A2B;
+            border-radius: 10px;
+
+            /* ---------------- MARGIN ---------------- */
+            margin-top: 0;
+            margin-right: auto;
+            margin-bottom: 30px;
+            margin-left: auto;
+            /* Shorthand: margin: 0 auto 30px auto; */
+
+            width: 92%;
+        }
+
+        .content h2 {
+            color: #6F4E37;
+            margin-top: 5px;
+            margin-bottom: 18px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .content p {
+            margin-bottom: 16px;
+            text-indent: 25px;
+        }
+
+        /* =====================================================
+                          INFO BOX SECTION
+           ===================================================== */
+        .info-box {
+            /* ---------------- CONTENT ---------------- */
+            background-color: #F5E6D3;
+            color: #4A3520;
+            font-size: 16px;
+
+            /* ---------------- PADDING ---------------- */
+            padding: 25px 40px;
+
+            /* ---------------- BORDER ---------------- */
+            border: 5px double #6F4E37;
+            border-radius: 8px;
+
+            /* ---------------- MARGIN ---------------- */
+            margin: 0 auto 30px auto;
+
+            width: 92%;
+        }
+
+        .info-box h2 {
+            color: #5C3A21;
+            margin-bottom: 15px;
+        }
+
+        .info-box ul {
+            list-style-type: none;
+            padding-left: 10px;
+        }
+
+        .info-box li {
+            padding: 8px 0;
+            border-bottom: 1px dotted #b99676;
+        }
+
+        .info-box li:last-child {
+            border-bottom: none;
+        }
+
+        /* =====================================================
+                           FOOTER SECTION
+           ===================================================== */
+        .footer {
+            /* ---------------- CONTENT ---------------- */
+            background-color: #4A3520;
+            color: #f0f0f0;
+            text-align: center;
+            font-size: 15px;
+
+            /* ---------------- PADDING ---------------- */
+            padding-top: 25px;
+            padding-right: 20px;
+            padding-bottom: 25px;
+            padding-left: 20px;
+
+            /* ---------------- BORDER ---------------- */
+            border-left-width: 8px;
+            border-left-style: solid;
+            border-left-color: #D2B48C;
+            
+            border-right-width: 8px;
+            border-right-style: solid;
+            border-right-color: #D2B48C;
+
+            /* ---------------- MARGIN ---------------- */
+            margin-top: 20px;
+            margin-right: auto;
+            margin-bottom: 0;
+            margin-left: auto;
+
+            width: 92%;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===================== HEADER ===================== -->
+    <div class="header">
+        <h1>☕ The Art of Coffee Brewing</h1>
+        <p>Exploring My Favorite Hobby — A CSS Box Model Demonstration</p>
+    </div>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <div class="content">
+        <h2>What Is Coffee Brewing?</h2>
+        <p>Coffee brewing is the process of extracting flavor from ground coffee beans using hot water. It is one of the most popular daily rituals around the world, but for me, it is much more than just a morning routine or a quick energy boost. It has become a meaningful hobby that brings calmness, joy, and a sense of achievement to my everyday life. There is something truly special about the smell of freshly ground coffee beans and the rich aroma that fills the room as hot water meets the coffee grounds.</p>
+        <p>This hobby is not difficult to start, but there is always something new to learn. From choosing the right beans — whether they come from Ethiopia, Colombia, or Brazil — to understanding how the roast level changes the taste, every small detail makes a big difference. I have learned that the water temperature, the grind size, the brewing time, and even the water-to-coffee ratio can completely transform the final cup. It feels a little bit like science mixed with art, and that balance is what makes it so fascinating to me.</p>
+        <p>Beyond the technical side, brewing coffee gives me a quiet moment to myself. In a world that always feels busy and rushed, those few minutes while waiting for the coffee to brew feel like a small, peaceful break. It is a simple pleasure that reminds me to slow down, be present, and appreciate the little things in life. Sometimes I enjoy it with a book, sometimes while listening to music, and sometimes just sitting quietly, watching the sunlight come through the window.</p>
+        <p>Over time, this hobby has also taught me patience and attention to detail. Good coffee cannot be rushed. If you pour the water too fast or use water that is too hot, the coffee might taste bitter. If you grind the beans too coarse, the coffee might taste weak and sour. It teaches me that care and precision produce better results — a lesson that applies to many other areas of life as well. Every cup is a little experiment, and even when it doesn't turn out perfect, I learn something new from it.</p>
+    </div>
+
+    <!-- ===================== INFO BOX ===================== -->
+    <div class="info-box">
+        <h2>Why Coffee Brewing Is My Favorite Hobby</h2>
+        <ul>
+            <li>✨ It helps me slow down and appreciate quiet moments in a busy day</li>
+            <li>✨ Every cup tastes a little different — there is always something new to discover</li>
+            <li>✨ It is affordable and easy to start, yet there is always room to improve and learn</li>
+            <li>✨ It makes mornings feel warmer and gives me a gentle start to my day</li>
+            <li>✨ I can share what I make with family and friends, and it brings people together</li>
+            <li>✨ The warm smell alone feels comforting and makes me feel relaxed immediately</li>
+            <li>✨ It feels like a creative outlet — I can adjust, experiment, and make it my own</li>
+        </ul>
+    </div>
+
+    <!-- ==================== FOOTER ==================== -->
+    <div class="footer">
+        <p><strong>Created by:</strong> [Anicka Paulen L. Suazo]</p>
+        <p><strong>Grade & Section:</strong> [9 Galatians]</p>
+        <p><strong>Activity 4:</strong> CSS Box Model | October 2026</p>
+        <p>All content created for educational purposes ✏️</p>
+    </div>
+
+</body>
+</html>
