@@ -1,1 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anicka Paulen Suazo | My Homepage</title>
+
+    <!-- ======================================
+        EXTERNAL CSS - Linked from styles.css
+    =======================================-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- ======================================
+        INTERNAL CSS - Inside <style> tag
+    =======================================-->
+    <style>
+        /* Element Selector: styles ALL <h2> elements */
+        h2 {
+            color: #2c3e50;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 6px;
+        }
+
+        /* ID Selector: styles ONE unique element */
+        #main-header {
+            text-align: center;
+            background-color: #e8f4f8;
+            padding: 30px;
+            border-bottom: 3px solid #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ======================================
+        TABLE OF CONTENTS (Bookmark Links)
+    =======================================-->
+    <nav id="toc">
+        <h2>📑 Table of Contents</h2>
+        <ul>
+            <li><a href="#about">1. About Me</a></li>
+            <li><a href="#personal">2. Personal Information</a></li>
+            <li><a href="#hobbies">3. My Hobbies</a></li>
+            <li><a href="#school">4. My School & Class</a></li>
+            <li><a href="#goals">5. My Dreams & Goals</a></li>
+            <li><a href="#contact">6. Connect With Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- ======================================
+        HEADER SECTION
+    =======================================-->
+    <header id="main-header">
+        <h1>✨ Welcome to My Personal Homepage ✨</h1>
+        <!-- INLINE CSS - style attribute inside the tag -->
+        <p style="color: #7f8c8d; font-style: italic; font-size: 18px;">
+            By: Anicka Paulen Suazo | Grade 9 - Galatians
+        </p>
+        <p style="color: #34495e;">A special page made just for my Web Development Performance Task 💻</p>
+    </header>
+
+    <!-- ======================================
+        SECTION 1: About Me
+    =======================================-->
+    <section id="about" class="content-box">
+        <h2>👋 About Me</h2>
+        <p>Hello there! It's so nice to meet you. 😊 My name is <strong>Anicka Paulen Suazo</strong>. I am a 14-year-old student who believes that learning is a wonderful journey. I was born on the 11th day of January in the year 2012. I currently live in the beautiful community of <em>Molino 3, Bellazona Navarre</em> here in Bacoor, Cavite.</p>
+        <p>I describe myself as someone who is kind, creative, and always eager to learn something new every single day. I believe that being good to others is just as important as getting high grades in school. I am thankful for my family, my friends, and all the blessings that I receive from God.</p>
+        <p class="highlight">💡 This paragraph uses a <strong>Class Selector</strong> from our External CSS file! Cool, right?</p>
+    </section>
+
+    <!-- ======================================
+        SECTION 2: Personal Information
+    =======================================-->
+    <section id="personal" class="content-box">
+        <h2>📋 My Personal Information</h2>
+        <ul>
+            <li><strong>Full Name:</strong> Anicka Paulen Suazo</li>
+            <li><strong>Birthday:</strong> January 11, 2012</li>
+            <li><strong>Age:</strong> 14 years old</li>
+            <li><strong>Location:</strong> Molino 3, Bellazona Navarre, Bacoor, Cavite</li>
+            <li><strong>School:</strong> Victorious Christian Montessori College – Bacoor</li>
+            <li><strong>Grade & Section:</strong> Grade 9 – Galatians</li>
+            <li><strong>Values I live by:</strong> Faith, Kindness, Hard Work, and Gratitude ❤️</li>
+        </ul>
+    </section>
+
+    <!-- ======================================
+        SECTION 3: My Hobbies
+    =======================================-->
+    <section id="hobbies" class="content-box">
+        <h2>🎨 Things I Love Doing (My Hobbies)</h2>
+        <p>When I have free time, these are the activities that make me happy and help me relax:</p>
+        
+        <h3>📖 Reading Books & Stories</h3>
+        <p>I absolutely love reading! Whether it's storybooks, novels, or inspirational articles, reading takes me to different worlds and teaches me new things. It helps me improve my vocabulary and imagination.</p>
+
+        <h3>🎵 Listening to Music</h3>
+        <p>Music is my happy place. I enjoy listening to different kinds of songs. Music helps me calm down when I'm stressed and makes me want to sing along when I'm happy!</p>
+
+        <h3>✏️ Drawing & Sketching</h3>
+        <p>I love expressing my creativity through art. Drawing allows me to put my thoughts and feelings on paper. Even simple sketches make me feel proud of what I can create.</p>
+
+        <h3>📱 Learning About Technology</h3>
+        <p>This is why I enjoy our computer class! I find it amazing how websites and apps are created. Learning HTML and CSS has been such an interesting experience for me.</p>
+
+        <h3>🏃 Spending Time Outdoors</h3>
+        <p>I also like taking short walks and enjoying fresh air. It reminds me to appreciate the beautiful nature around us here in our community.</p>
+    </section>
+
+    <!-- ======================================
+        SECTION 4: My School & Class
+    =======================================-->
+    <section id="school" class="content-box">
+        <h2>🏫 My School & My Class</h2>
+        <p>I am proud to be a student at <strong>Victorious Christian Montessori College – Bacoor</strong>. My school has taught me not just academic lessons, but also good values, faith in God, and how to be a responsible person.</p>
+        <p>I belong to <strong>Grade 9 – Galatians</strong>. My section is named after one of the beautiful books in the Bible. I am thankful for my teachers who guide me and my classmates who make school life fun and memorable. Even though schoolwork can sometimes be challenging, I know that all my efforts will help me reach my dreams someday.</p>
+    </section>
+
+    <!-- ======================================
+        SECTION 5: My Dreams & Goals
+    =======================================-->
+    <section id="goals" class="content-box">
+        <h2>🎯 My Dreams & Future Goals</h2>
+        <p>I have many dreams that I want to achieve as I grow up. Here are some of them:</p>
+        <ul>
+          
+            <li>✅ To make my parents and family proud of me</li>
+            <li>✅ To learn more about computers and technology</li>
+            <li>✅ To become a successful person who helps others</li>
+            <li>✅ To always keep my faith and values close to my heart</li>
+        </ul>
+        <p>I know that reaching these goals won't always be easy, but I am willing to study hard, stay focused, and never give up on my dreams. 💪</p>
+    </section>
+
+    <!-- ======================================
+        SECTION 6: Contact Me
+    =======================================-->
+    <section id="contact" class="content-box">
+        <h2>📬 Get In Touch With Me</h2>
+        <p>Thank you so much for visiting my little corner on the internet! If you want to reach out, you can send me a message. I hope you enjoyed learning a little bit about me.</p>
+        <p><em>"Every great dream begins with a dreamer."</em> — This is one of my favorite quotes. Remember, you can do great things too! 🌟</p>
+    </section>
+
+    <!-- ======================================
+        FOOTER
+    =======================================-->
+    <footer id="page-footer">
+        <p>© 2026 Anicka Paulen Suazo | Grade 9 - Galatians</p>
+        <p>Victorious Christian Montessori College – Bacoor | Performance Task in Web Technology 💻</p>
+        <p style="font-size: 12px; margin-top: 10px;">Created with ❤️ and lots of learning!</p>
+    </footer>
+
+</body>
+</html>
 
